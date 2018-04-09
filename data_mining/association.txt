@@ -1,0 +1,122 @@
+Item : {'C', 'B', 'A'} 
+	R: A --> B ^ C 		
+	Confidence = SC{'C', 'B', 'A'}/SC{'A'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: B --> A ^ C 		
+	Confidence = SC{'C', 'B', 'A'}/SC{'B'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: C --> A ^ B 		
+	Confidence = SC{'C', 'B', 'A'}/SC{'C'} = 2 / 4.0 = 50.0% < min_conf(60.0%) 
+	R is Rejected.
+
+	R: A ^ B --> C 		
+	Confidence = SC{'C', 'B', 'A'}/SC{'B', 'A'} = 2 / 2.0 = 100.0% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: A ^ C --> B 		
+	Confidence = SC{'C', 'B', 'A'}/SC{'C', 'A'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: B ^ C --> A 		
+	Confidence = SC{'C', 'B', 'A'}/SC{'B', 'C'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'B', 'C'} 
+	R: B --> C 		
+	Confidence = SC{'B', 'C'}/SC{'B'} = 3 / 3.0 = 100.0% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: C --> B 		
+	Confidence = SC{'B', 'C'}/SC{'C'} = 3 / 4.0 = 75.0% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'D', 'C'} 
+	R: C --> D 		
+	Confidence = SC{'D', 'C'}/SC{'C'} = 2 / 4.0 = 50.0% < min_conf(60.0%) 
+	R is Rejected.
+
+	R: D --> C 		
+	Confidence = SC{'D', 'C'}/SC{'D'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'C', 'A'} 
+	R: A --> C 		
+	Confidence = SC{'C', 'A'}/SC{'A'} = 3 / 3.0 = 100.0% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: C --> A 		
+	Confidence = SC{'C', 'A'}/SC{'C'} = 3 / 4.0 = 75.0% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'D', 'A'} 
+	R: A --> D 		
+	Confidence = SC{'D', 'A'}/SC{'A'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: D --> A 		
+	Confidence = SC{'D', 'A'}/SC{'D'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'E', 'C'} 
+	R: C --> E 		
+	Confidence = SC{'E', 'C'}/SC{'C'} = 2 / 4.0 = 50.0% < min_conf(60.0%) 
+	R is Rejected.
+
+	R: E --> C 		
+	Confidence = SC{'E', 'C'}/SC{'E'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'B', 'A'} 
+	R: A --> B 		
+	Confidence = SC{'B', 'A'}/SC{'A'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: B --> A 		
+	Confidence = SC{'B', 'A'}/SC{'B'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'D', 'E'} 
+	R: D --> E 		
+	Confidence = SC{'D', 'E'}/SC{'D'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: E --> D 		
+	Confidence = SC{'D', 'E'}/SC{'E'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
+Item : {'C', 'D', 'A'} 
+	R: A --> C ^ D 		
+	Confidence = SC{'C', 'D', 'A'}/SC{'A'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: C --> A ^ D 		
+	Confidence = SC{'C', 'D', 'A'}/SC{'C'} = 2 / 4.0 = 50.0% < min_conf(60.0%) 
+	R is Rejected.
+
+	R: D --> A ^ C 		
+	Confidence = SC{'C', 'D', 'A'}/SC{'D'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: A ^ C --> D 		
+	Confidence = SC{'C', 'D', 'A'}/SC{'C', 'A'} = 2 / 3.0 = 66.66666666666666% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: A ^ D --> C 		
+	Confidence = SC{'C', 'D', 'A'}/SC{'D', 'A'} = 2 / 2.0 = 100.0% >= min_conf(60.0%) 
+	R is Selected.
+
+	R: C ^ D --> A 		
+	Confidence = SC{'C', 'D', 'A'}/SC{'D', 'C'} = 2 / 2.0 = 100.0% >= min_conf(60.0%) 
+	R is Selected.
+
+______________________________________________
