@@ -22,7 +22,7 @@ class Eclad(Item_Sets) :
             if len(self.unique_transaction[item]) >= self.min_sup :
                 self.frquent_itemsets[item]={"sup_count" : self.unique_transaction[item]}
                 L.append(item)
-        while L != [] :
+        while L :
             length = len(L)
             length_i = len(L[0])
             if length_i == 1 :
